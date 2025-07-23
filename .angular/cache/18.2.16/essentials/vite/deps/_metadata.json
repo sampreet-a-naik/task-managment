@@ -1,25 +1,34 @@
 {
-  "hash": "e28b688d",
-  "configHash": "a09405a3",
+  "hash": "9c934e2e",
+  "configHash": "821b3c97",
   "lockfileHash": "e1e33548",
-  "browserHash": "fa8b6906",
+  "browserHash": "ff152af6",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "b0747ddf",
+      "fileHash": "a2f2d905",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "1a8d9e43",
+      "fileHash": "3011d7d9",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "e5f3c347",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-TBSDPAXK": {
-      "file": "chunk-TBSDPAXK.js"
+    "chunk-HOSBANRR": {
+      "file": "chunk-HOSBANRR.js"
+    },
+    "chunk-C7GL24IT": {
+      "file": "chunk-C7GL24IT.js"
     }
   }
 }

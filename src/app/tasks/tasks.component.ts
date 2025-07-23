@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { TaskComponent } from "./task/task.component";
 import { NewTaskComponent } from "./new-task/new-task.component";
+import { type NewTaskData } from "./task/task.modal";
 @Component({
   selector: "app-tasks",
   standalone: true,
@@ -12,6 +13,7 @@ export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input({ required: true }) name!: string;
   isAddingTask: boolean = false;
+
   tasks = [
     {
       id: "t1",
@@ -47,5 +49,18 @@ export class TasksComponent {
   }
   onStartAddTask() {
     this.isAddingTask = true;
+  }
+  onCancelAddTask() {
+    this.isAddingTask = false;
+  }
+  onAddTask(TaskData: NewTaskData) {
+    this.tasks.push({
+      id: new Date().getDate().toString(),
+      userId: this.userId,
+      title: TaskData.title,
+      summary: TaskData.summary,
+      dueDate: TaskData.date,
+    });
+    this.isAddingTask = false;
   }
 }
